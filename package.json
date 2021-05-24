@@ -1,0 +1,23 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/iliebabcenco/restaurant-page.git"
+  },
+  "author": "Ilie Babcenco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iliebabcenco/restaurant-page/issues"
+  },
+  "homepage": "https://github.com/iliebabcenco/restaurant-page#readme",
+  "devDependencies": {
+    "webpack": "^5.37.1",
+    "webpack-cli": "^4.7.0"
+  }
+}
