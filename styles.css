@@ -30,7 +30,8 @@ nav {
 
 .menu-list-link {
   color: #C9AB81;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: color 0.5s; }
 
 .menu-list-link:hover {
   color: #816e52; }
@@ -46,8 +47,13 @@ nav {
   padding-bottom: 4rem; }
 
 .img-dish {
-  width: 15rem;
-  border-radius: 5px; }
+  width: 20rem;
+  border-radius: 5px;
+  transition: width 0.7s; }
+
+.img-dish:hover {
+  width: 22rem;
+  border: 1px solid #C9AB81; }
 
 .dishes {
   display: flex;
@@ -55,7 +61,9 @@ nav {
   justify-content: center; }
 
 .dish {
-  margin: 1rem; }
+  margin: 1rem;
+  color: #C9AB81;
+  text-decoration: none; }
 
 .frame {
   width: 90%;
@@ -79,7 +87,7 @@ nav {
   border-radius: 10px; }
 
 .main-menu-img {
-  width: 20rem;
+  width: 40%;
   border-radius: 10px; }
 
 .footer {

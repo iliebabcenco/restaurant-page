@@ -41,6 +41,7 @@ nav {
 .menu-list-link {
     color: $main-color;
     text-decoration: none;
+    transition: color 0.5s;
 }
 
 .menu-list-link:hover {
@@ -62,8 +63,14 @@ nav {
 }
 
 .img-dish {
-    width: 15rem;
+    width: 20rem;
     border-radius: 5px;
+    transition: width 0.7s;
+}
+
+.img-dish:hover {
+    width: 22rem;
+    border: 1px solid $main-color;
 }
 
 .dishes {
@@ -73,6 +80,8 @@ nav {
 }
 .dish {
     margin: 1rem;
+    color: $main-color;
+    text-decoration: none;
 }
 
 .frame {
@@ -92,6 +101,7 @@ nav {
     border: 1px solid $main-color;
     margin-top: 4rem;
     margin-bottom: 4rem;
+    
 }
 
 .main-img {
@@ -100,7 +110,7 @@ nav {
 }
 
 .main-menu-img {
-    width: 20rem;
+    width: 40%;
     border-radius: 10px;
 }
 
