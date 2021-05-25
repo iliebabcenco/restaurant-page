@@ -38,13 +38,17 @@ export default function displayMenu() {
 
     mainQuote.innerText = 'We use only the best species!';
 
-    menu.setAttribute('class', 'menu');
+    menu.setAttribute('class', 'menu, main');
+    menu.setAttribute('id', 'menuPage');
     mainQuote.setAttribute('class', 'main-quote');
     mainImg.setAttribute('class', 'main-menu-img');
     mainImg.setAttribute('src', 'assets/images/menu1.jpg');
 
-    menu.appendChild(mainQuote);
+    menu.style.display = 'none';
+
+    
     menu.appendChild(mainImg);
+    menu.appendChild(mainQuote);
     menu.appendChild(dishes);
     dishes.appendChild(dish1);
     dishes.appendChild(dish2);

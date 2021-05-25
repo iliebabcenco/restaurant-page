@@ -9,6 +9,7 @@ export default function displayMain() {
     mainQuote.innerText = 'Culinary traditions worthy of your taste!';
 
     main.setAttribute('class', 'main');
+    main.setAttribute('id', 'mainPage');
     mainTitle.setAttribute('class', 'main-title');
     mainQuote.setAttribute('class', 'main-quote');
     mainImg.setAttribute('class', 'main-img');
