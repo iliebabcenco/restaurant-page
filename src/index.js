@@ -2,7 +2,7 @@ import displayMain from './mainpage';
 import displayMenu from './menu';
 import displayContacts from './contact';
 
-function displayNavBar() {
+const displayNavBar = () => {
   const nav = document.createElement('nav');
   const navTitle = document.createElement('h1');
   const navUl = document.createElement('ul');
@@ -44,9 +44,9 @@ function displayNavBar() {
   contactLi.appendChild(contactLiA);
 
   return nav;
-}
+};
 
-function displayFooter() {
+const displayFooter = () => {
   const footer = document.createElement('footer');
   const title = document.createElement('h5');
   title.innerText = 'Copyright \u00A9 Ilie Babcenco';
@@ -54,17 +54,17 @@ function displayFooter() {
   footer.setAttribute('class', 'footer');
   title.setAttribute('class', 'copyright');
   return footer;
-}
+};
 
-function displayContent(pageName) {
+const displayContent = (pageName) => {
   const content = document.getElementsByClassName('main');
   for (let i = 0; i < content.length; i += 1) {
     content[i].style.display = 'none';
   }
   document.getElementById(pageName).style.display = 'block';
-}
+};
 
-function loadPage() {
+const loadPage = () => {
   const content = document.getElementById('content');
   content.appendChild(displayNavBar());
   content.appendChild(displayMain());
@@ -73,9 +73,9 @@ function loadPage() {
 
   content.appendChild(displayFooter());
 
-  document.getElementById('home-link').onclick = function () { displayContent('mainPage'); };
-  document.getElementById('menu-link').onclick = function () { displayContent('menuPage'); };
-  document.getElementById('contact-link').onclick = function () { displayContent('contactsPage'); };
-}
+  document.getElementById('home-link').onclick = () => { displayContent('mainPage'); };
+  document.getElementById('menu-link').onclick = () => { displayContent('menuPage'); };
+  document.getElementById('contact-link').onclick = () => { displayContent('contactsPage'); };
+};
 
 loadPage();

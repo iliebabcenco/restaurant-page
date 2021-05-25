@@ -1,4 +1,4 @@
-export default function displayMenu() {
+const displayMenu = () => {
   const menu = document.createElement('main');
   const mainQuote = document.createElement('h5');
   const mainImg = document.createElement('img');
@@ -62,4 +62,6 @@ export default function displayMenu() {
   dish3.appendChild(imgDish3);
   dish3.appendChild(parDish3);
   return menu;
-}
+};
+
+export default displayMenu;

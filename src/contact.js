@@ -1,4 +1,4 @@
-export default function displayContacts() {
+const displayContacts = () => {
   const contacts = document.createElement('main');
   const mainTitle = document.createElement('h2');
   const mainQuote = document.createElement('h5');
@@ -21,4 +21,6 @@ export default function displayContacts() {
   contacts.appendChild(frame);
 
   return contacts;
-}
+};
+
+export default displayContacts;

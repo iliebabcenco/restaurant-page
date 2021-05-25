@@ -1,4 +1,4 @@
-export default function displayMain() {
+const displayMain = () => {
   const main = document.createElement('main');
   const mainTitle = document.createElement('h2');
   const mainQuote = document.createElement('h5');
@@ -19,4 +19,6 @@ export default function displayMain() {
   main.appendChild(mainImg);
 
   return main;
-}
+};
+
+export default displayMain;
