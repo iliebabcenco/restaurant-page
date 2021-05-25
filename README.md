@@ -1,4 +1,4 @@
-# Activities Manager
+# Restaurant Page
 
 ## Description
 
