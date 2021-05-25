@@ -1,4 +1,6 @@
 import displayMain from './mainpage';
+import displayMenu from './menu';
+import displayContacts from './contact';
 
 function displayNavBar() {
     const nav = document.createElement('nav');
@@ -27,6 +29,10 @@ function displayNavBar() {
     menuLiA.setAttribute('class', 'menu-list-link');
     contactLiA.setAttribute('class', 'menu-list-link');
 
+    homeLiA.setAttribute('href', '#');
+    menuLiA.setAttribute('href', '#');
+    contactLiA.setAttribute('href', '#');
+
     nav.appendChild(navTitle);
     nav.appendChild(navUl);
     navUl.appendChild(homeLi);
@@ -40,10 +46,29 @@ function displayNavBar() {
 
 }
 
+function displayFooter() {
+    const footer = document.createElement('footer');
+    const title = document.createElement('h5');
+    title.innerText = 'Copyright \u00A9 Ilie Babcenco';
+    footer.appendChild(title);
+    footer.setAttribute('class', 'footer');
+    title.setAttribute('class', 'copyright');
+    return footer;
+}
+
 function loadPage() {
     const content = document.getElementById('content')
     content.appendChild(displayNavBar());
+    content.appendChild(displayContacts());
     content.appendChild(displayMain());
+    content.appendChild(displayMenu());
+    content.appendChild(displayFooter());
+}
+
+function displayContent() {
+    const links = document.getElementsByClassName('menu-list-link');
+    
+
 }
 
 
