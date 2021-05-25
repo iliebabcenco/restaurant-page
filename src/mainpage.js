@@ -13,7 +13,7 @@ export default function displayMain() {
     mainTitle.setAttribute('class', 'main-title');
     mainQuote.setAttribute('class', 'main-quote');
     mainImg.setAttribute('class', 'main-img');
-    mainImg.setAttribute('src', 'assets/images/victor-prodanov.jpg');
+    mainImg.setAttribute('src', 'assets/images/1.jpg');
 
     main.appendChild(mainTitle);
     main.appendChild(mainQuote);

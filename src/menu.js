@@ -4,9 +4,9 @@ export default function displayMenu() {
     const mainImg = document.createElement('img');
 
     const dishes = document.createElement('div');
-    const dish1 = document.createElement('div');
-    const dish2 = document.createElement('div');
-    const dish3 = document.createElement('div');
+    const dish1 = document.createElement('a');
+    const dish2 = document.createElement('a');
+    const dish3 = document.createElement('a');
 
     const imgDish1 = document.createElement('img');
     const imgDish2 = document.createElement('img');
@@ -19,8 +19,12 @@ export default function displayMenu() {
     dishes.setAttribute('class', 'dishes');
 
     dish1.setAttribute('class', 'dish');
+    dish1.setAttribute('href', '#');
     dish2.setAttribute('class', 'dish');
+    dish2.setAttribute('href', '#');
     dish3.setAttribute('class', 'dish');
+    dish3.setAttribute('href', '#');
+    
 
     imgDish1.setAttribute('class', 'img-dish');
     imgDish1.setAttribute('src', 'assets/images/menu2.jpg');
